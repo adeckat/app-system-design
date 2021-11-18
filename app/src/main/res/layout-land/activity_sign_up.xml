@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pearl"
+    android:orientation="horizontal"
+    tools:context=".activity.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="4">
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/swoop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="6">
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hakuna Matata"
+            android:textSize="55sp"
+            android:textColor="@color/pastel_green"
+            android:fontFamily="@font/coconutz"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/edt_user_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Create your user name"
+            android:inputType="text"
+            android:textColor="@color/pastel_green"
+            android:textColorHint="@color/pastel_blue"
+            android:textSize="@dimen/phoneTextSize"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Create your password"
+            android:inputType="textPassword"
+            android:textColor="@color/pastel_green"
+            android:textColorHint="@color/pastel_blue"
+            android:textSize="@dimen/phoneTextSize"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/edt_confirm_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Confirm your password"
+            android:inputType="textPassword"
+            android:textColor="@color/pastel_green"
+            android:textColorHint="@color/pastel_blue"
+            android:textSize="@dimen/phoneTextSize"
+            android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                app:backgroundTint="@color/coral"
+                android:textColor="@color/pastel_blue"
+                android:textSize="@dimen/phoneTextSize"/>
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                app:backgroundTint="@color/coral"
+                android:textColor="@color/pastel_blue"
+                android:textSize="@dimen/phoneTextSize"
+                android:layout_marginLeft="60dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2021 sKoolKids"
+            android:textColor="@color/pastel_green"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/pearl"-->
+<!--    android:padding="16dp"-->
+<!--    tools:context=".activity.SignUpActivity">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/img_logo"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:src="@drawable/swoop"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_app_name"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:text="Hakuna Matata"-->
+<!--        android:textSize="55sp"-->
+<!--        android:textColor="#B2B8A3"-->
+<!--        android:fontFamily="@font/coconutz"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/img_logo" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edt_user_name"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:hint="Create your user name"-->
+<!--        android:inputType="text"-->
+<!--        android:textColor="@color/pastel_green"-->
+<!--        android:textColorHint="@color/pastel_blue"-->
+<!--        android:textSize="@dimen/textPhoneSize"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_app_name" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edt_password"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:hint="Create your password"-->
+<!--        android:inputType="text"-->
+<!--        android:textColor="@color/pastel_green"-->
+<!--        android:textColorHint="@color/pastel_blue"-->
+<!--        android:textSize="@dimen/textPhoneSize"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        app:boxStrokeColor="@null"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edt_user_name" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/edt_confirm_password"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center"-->
+<!--        android:hint="Confirm your password"-->
+<!--        android:inputType="text"-->
+<!--        android:textColor="@color/pastel_green"-->
+<!--        android:textColorHint="@color/pastel_blue"-->
+<!--        android:textSize="@dimen/textPhoneSize"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        app:boxStrokeColor="@null"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edt_password" />-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearlayout_sign_up"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/edt_confirm_password">-->
+<!--        <Button-->
+<!--            android:id="@+id/btn_back"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Back"-->
+<!--            app:backgroundTint="@color/coral"-->
+<!--            android:textColor="@color/pastel_blue"-->
+<!--            android:textSize="@dimen/textPhoneSize"/>-->
+<!--        <Button-->
+<!--            android:id="@+id/btn_next"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Next"-->
+<!--            app:backgroundTint="@color/coral"-->
+<!--            android:textColor="@color/pastel_blue"-->
+<!--            android:textSize="@dimen/textPhoneSize"-->
+<!--            android:layout_marginLeft="50dp"/>-->
+<!--    </LinearLayout>-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

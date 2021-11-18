@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pearl"
+    tools:context=".fragment.GoalFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/linearlayout_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_calculated_bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pastel_green"
+                android:textSize="150sp"
+                tools:text="BMI" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_rcm_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_label_rcm_goal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Recommended goal"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize" />
+            <TextView
+                android:id="@+id/tv_rcm_goal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize"
+                tools:text="this is the rcm goal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_label_goal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Set my goal"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="36dp">
+                <Spinner
+                    android:id="@+id/spn_goal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/pastel_green"
+                    android:spinnerMode="dropdown"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:id="@+id/spn_lbs"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/pastel_green"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/tv_lbs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="lbs"
+                        android:textColor="@color/pastel_green"
+                        android:textSize="@dimen/tabletTextSize"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_label_calories"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Recommended calories intake"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize"/>
+            <TextView
+                android:id="@+id/tv_rcm_calories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize"
+                tools:text="this is the rcm calories intake" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="9">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Calculate"
+                android:textColor="@color/pastel_blue"
+                android:textSize="@dimen/tabletTextSize"
+                app:backgroundTint="@color/coral" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

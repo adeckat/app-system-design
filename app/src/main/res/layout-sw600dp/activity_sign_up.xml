@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pearl"
+    android:orientation="vertical"
+    tools:context=".activity.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/swoop"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="2">
+        <TextView
+            android:id="@+id/tv_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hakuna Matata"
+            android:textSize="80sp"
+            android:textColor="@color/pastel_green"
+            android:fontFamily="@font/coconutz"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+        <EditText
+            android:id="@+id/edt_user_name"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Create your user name"
+            android:inputType="text"
+            android:textColor="@color/pastel_green"
+            android:textColorHint="@color/pastel_blue"
+            android:textSize="@dimen/tabletTextSize"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Create your password"
+            android:inputType="textPassword"
+            android:textColor="@color/pastel_green"
+            android:textColorHint="@color/pastel_blue"
+            android:textSize="@dimen/tabletTextSize"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+        <EditText
+            android:id="@+id/edt_confirm_password"
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Confirm your password"
+            android:inputType="textPassword"
+            android:textColor="@color/pastel_green"
+            android:textColorHint="@color/pastel_blue"
+            android:textSize="@dimen/tabletTextSize"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            app:backgroundTint="@color/coral"
+            android:textColor="@color/pastel_blue"
+            android:textSize="@dimen/tabletTextSize"/>
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            app:backgroundTint="@color/coral"
+            android:textColor="@color/pastel_blue"
+            android:textSize="@dimen/tabletTextSize"
+            android:layout_marginLeft="120dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2021 sKoolKids"
+            android:textColor="@color/pastel_green"
+            android:layout_gravity="bottom"
+            android:textSize="30sp"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pearl"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+    <include layout="@layout/bar_home" />
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/coconutz"
+        android:text="Hakuna Matata"
+        android:textColor="@color/pastel_green"
+        android:textSize="55sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btn_profile"
+                    android:layout_width="@dimen/phoneMainBtn"
+                    android:layout_height="@dimen/phoneMainBtn"
+                    android:background="@drawable/phone_main_button"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/profile"/>
+                <TextView
+                    android:id="@+id/tv_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:text="Profile"
+                    android:textColor="@color/pastel_green"
+                    android:textSize="@dimen/phoneTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btn_bmi"
+                    android:layout_width="@dimen/phoneMainBtn"
+                    android:layout_height="@dimen/phoneMainBtn"
+                    android:layout_gravity="center"
+                    android:background="@drawable/phone_main_button"
+                    android:padding="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/bmi" />
+                <TextView
+                    android:id="@+id/tv_bmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:text="BMI"
+                    android:textColor="@color/pastel_green"
+                    android:textSize="@dimen/phoneTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btn_activity"
+                    android:layout_width="@dimen/phoneMainBtn"
+                    android:layout_height="@dimen/phoneMainBtn"
+                    android:layout_gravity="center"
+                    android:background="@drawable/phone_main_button"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/calendar" />
+                <TextView
+                    android:id="@+id/tv_plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:text="Activity"
+                    android:textColor="@color/pastel_green"
+                    android:textSize="@dimen/phoneTextSize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btn_goal"
+                    android:layout_width="@dimen/phoneMainBtn"
+                    android:layout_height="@dimen/phoneMainBtn"
+                    android:layout_gravity="center"
+                    android:background="@drawable/phone_main_button"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/goal" />
+                <TextView
+                    android:id="@+id/tv_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:text="Goal"
+                    android:textColor="@color/pastel_green"
+                    android:textSize="@dimen/phoneTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btn_hike"
+                    android:layout_width="@dimen/phoneMainBtn"
+                    android:layout_height="@dimen/phoneMainBtn"
+                    android:layout_gravity="center"
+                    android:background="@drawable/phone_main_button"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/hiking" />
+                <TextView
+                    android:id="@+id/tv_hike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:text="Hikes"
+                    android:textColor="@color/pastel_green"
+                    android:textSize="@dimen/phoneTextSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageButton
+                    android:id="@+id/btn_weather"
+                    android:layout_width="@dimen/phoneMainBtn"
+                    android:layout_height="@dimen/phoneMainBtn"
+                    android:layout_gravity="center"
+                    android:background="@drawable/phone_main_button"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/weather" />
+                <TextView
+                    android:id="@+id/tv_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="24dp"
+                    android:text="Weather"
+                    android:textColor="@color/pastel_green"
+                    android:textSize="@dimen/phoneTextSize" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--android:id="@+id/cv_profile_pic"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:shape="ring"-->
+    <!--android:thicknessRatio="1.9"-->
+    <!--android:layout_gravity="center"-->
+    <!--app:cardCornerRadius="150dp"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:innerRadius="0dp">-->
+
+    <!--<ImageView-->
+    <!--    android:id="@+id/img_profile_pic"-->
+    <!--    android:layout_width="150dp"-->
+    <!--    android:layout_height="150dp"-->
+    <!--    android:layout_gravity="center"-->
+    <!--    android:scaleType="fitCenter"-->
+    <!--    android:src="@drawable/plane">-->
+    <!--</ImageView>-->
+    <!--</androidx.cardview.widget.CardView>-->

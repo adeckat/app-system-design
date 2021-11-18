@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pearl"
+    tools:context=".activity.CreateActivity">
+    <include layout="@layout/bar_create" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content">
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/img_profile_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/phone_account"
+                    app:civ_border_color="@color/pearl"
+                    app:civ_circle_color="@color/pearl" />
+                <ImageButton
+                    android:id="@+id/btn_update_pic"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignBottom="@id/img_profile_pic"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/camera"
+                    app:backgroundTint="@color/pearl" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/phoneTextSize"
+                android:gravity="center_vertical"
+                tools:text="this is the username" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="7">
+
+            <LinearLayout
+                android:id="@+id/linearlayout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_label_name"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="@color/pastel_green"
+                    android:textSize="@dimen/phoneTextSize" />
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:hint="Enter first and last name"
+                    android:inputType="text"
+                    android:textColor="@color/pastel_green"
+                    android:textColorHint="@color/pastel_blue"
+                    android:textSize="@dimen/phoneTextSize"
+                    android:background="@null"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_label_dob"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Birthday"
+                    android:textColor="@color/pastel_green"
+                    android:textSize="@dimen/phoneTextSize" />
+                <EditText
+                    android:id="@+id/edt_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Click to set birthday"
+                    android:inputType="date"
+                    android:textColor="@color/pastel_green"
+                    android:textColorHint="@color/pastel_blue"
+                    android:textSize="@dimen/phoneTextSize"
+                    android:layout_marginLeft="24dp"
+                    android:focusableInTouchMode="false"
+                    android:background="@null"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_label_gender"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textColor="@color/pastel_green"
+                    android:textSize="@dimen/phoneTextSize" />
+                <RadioGroup
+                    android:id="@+id/radio_gender"
+                    android:layout_marginLeft="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!-- In RadioGroup create the 1 Radio Button-->
+                    <!-- like this we will add some more Radio Button-->
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/radio_male"
+                        android:text="Male"
+                        android:textSize="@dimen/phoneTextSize"
+                        android:textColor="@color/pastel_green"
+                        android:layout_weight="1"/>
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/radio_female"
+                        android:text="Female"
+                        android:textSize="@dimen/phoneTextSize"
+                        android:textColor="@color/pastel_green"
+                        android:layout_weight="1"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_height"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_label_height"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Height"
+                    android:textColor="@color/pastel_green"
+                    android:textSize="@dimen/phoneTextSize"/>
+                <Spinner
+                    android:id="@+id/spn_ft"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/pastel_green"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="24dp"/>
+                <TextView
+                    android:id="@+id/tv_ft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ft"
+                    android:textSize="@dimen/phoneTextSize"
+                    android:textColor="@color/pastel_green"
+                    android:layout_marginLeft="5dp"/>
+                <Spinner
+                    android:id="@+id/spn_in"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/pastel_green"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:id="@+id/tv_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in"
+                    android:textSize="@dimen/phoneTextSize"
+                    android:textColor="@color/pastel_green"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:gravity="center_vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_label_weight"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Weight"
+                    android:textColor="@color/pastel_green"
+                    android:textSize="@dimen/phoneTextSize"/>
+                <Spinner
+                    android:id="@+id/spn_lbs"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/pastel_green"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="24dp"/>
+                <TextView
+                    android:id="@+id/tv_dot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textSize="@dimen/phoneTextSize"
+                    android:textColor="@color/pastel_green"
+                    android:layout_marginLeft="5dp"/>
+                <Spinner
+                    android:id="@+id/spn_dcm_lbs"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/pastel_green"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:id="@+id/tv_lbs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="lbs"
+                    android:textSize="@dimen/phoneTextSize"
+                    android:textColor="@color/pastel_green"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_label_location"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:textColor="@color/pastel_green"
+                    android:textSize="@dimen/phoneTextSize"/>
+                <LinearLayout
+                    android:layout_marginLeft="24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Spinner
+                        android:id="@+id/spn_country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/pastel_green"
+                        android:spinnerMode="dropdown"/>
+                    <Spinner
+                        android:id="@+id/spn_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/pastel_green"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginTop="10dp"/>
+                    <Spinner
+                        android:id="@+id/spn_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/pastel_green"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    app:backgroundTint="@color/coral"
+                    android:textColor="@color/pastel_blue"
+                    android:textSize="@dimen/phoneTextSize"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<androidx.cardview.widget.CardView-->
+<!--android:id="@+id/cv_profile_pic"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--app:cardCornerRadius="150dp"-->
+<!--android:shape="ring"-->
+<!--android:thicknessRatio="1.9"-->
+<!--android:layout_marginTop="24dp"-->
+<!--android:layout_centerInParent="true"-->
+<!--android:innerRadius="0dp">-->
+
+<!--<ImageView-->
+<!--    android:id="@+id/img_profile_pic"-->
+<!--    android:layout_width="150dp"-->
+<!--    android:layout_height="150dp"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:scaleType="fitCenter"-->
+<!--    android:src="@drawable/plane">-->
+
+<!--</ImageView>-->
+<!--</androidx.cardview.widget.CardView>-->
+
+<!--<ImageButton-->
+<!--android:id="@+id/btn_update_pic"-->
+<!--android:layout_height="30dp"-->
+<!--android:layout_width="30dp"-->
+<!--android:scaleType="fitCenter"-->
+<!--android:src="@drawable/camera"-->
+<!--android:layout_marginTop="10dp"-->
+<!--app:backgroundTint="@color/coral"-->
+<!--    />-->

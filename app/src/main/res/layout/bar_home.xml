@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/coral">
+
+    <ImageButton
+        android:id="@+id/btn_logout"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:background="@color/coral"
+        android:src="@drawable/logout"
+        android:rotation="180"/>
+    <TextView
+        android:id="@+id/tv_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="Home Page"
+        android:textSize="20sp"
+        android:textColor="@color/pastel_blue"/>
+    <ImageButton
+        android:id="@+id/btn_profile_pic"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/phone_account"
+        android:background="@drawable/pic_button"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"/>
+
+</RelativeLayout>

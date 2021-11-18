@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="phoneTextSize">20sp</dimen>
+    <dimen name="tabletTextSize">30sp</dimen>
+    <dimen name="phoneMainBtn">100dp</dimen>
+    <dimen name="tabletMainBtn">150dp</dimen>
+</resources>

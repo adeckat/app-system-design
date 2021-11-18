@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/pearl"
+    tools:context=".fragment.BMIFragment">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_calculated_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center"
+        android:layout_weight="2">
+        <TextView
+            android:id="@+id/tv_calculated_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pastel_green"
+            android:textSize="100dp"
+            tools:text="BMI" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout_check_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:gravity="center"
+        android:layout_weight="2">
+<!--        <TextView-->
+<!--            android:id="@+id/tv_label_checked_bmi"-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Checked BMI"-->
+<!--            android:textColor="@color/pastel_green"-->
+<!--            android:textSize="@dimen/phoneTextSize" />-->
+        <TextView
+            android:id="@+id/tv_checked_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pastel_green"
+            android:textSize="@dimen/phoneTextSize"
+            tools:text="this is the checked BMI" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearlayout_display_bmi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="15">
+        <ImageView
+            android:id="@+id/tv_label_display_bmi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bmi_visual"
+            android:background="@color/pearl"
+            android:padding="16dp"
+            tools:text="Display BMI"/>
+    </LinearLayout>
+
+</LinearLayout>

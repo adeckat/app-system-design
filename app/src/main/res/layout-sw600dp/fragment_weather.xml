@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:orientation="vertical"
+    android:background="@color/pearl"
+    tools:context=".fragment.WeatherFragment">
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_border"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/edt_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="@string/enter_your_city_name"
+            android:inputType="text"
+            android:paddingStart="16dp"
+            android:textColor="@color/pastel_green"
+            android:textColorHint="@color/pastel_blue"
+            android:textSize="@dimen/tabletTextSize" />
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingEnd="5dp"
+            android:src="@drawable/search" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/pastel_green"
+        android:textSize="@dimen/tabletTextSize"
+        android:layout_weight="1"
+        tools:text="this is the forecast" />
+    <TextView
+        android:id="@+id/tv_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textColor="@color/pastel_green"
+        android:textSize="60dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_weight="2"
+        tools:text="tempurature" />
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:textColor="@color/pastel_green"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        tools:text="this is the time" />
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/pastel_green"
+        android:textSize="@dimen/tabletTextSize"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        tools:text="this is the city" />
+    <TextView
+        android:id="@+id/tv_country"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/pastel_green"
+        android:textSize="@dimen/tabletTextSize"
+        android:layout_weight="1"
+        tools:text="this is the country" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Humidity"
+            android:textColor="@color/pastel_green"
+            android:textSize="@dimen/tabletTextSize"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/humidity" />
+        <TextView
+            android:id="@+id/tv_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text=" — "
+            android:textColor="@color/pastel_green"
+            android:textSize="@dimen/tabletTextSize" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Min Temperature"
+            android:textColor="@color/pastel_green"
+            android:textSize="@dimen/tabletTextSize"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/temp_down" />
+        <TextView
+            android:id="@+id/tv_min_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text=" — "
+            android:textColor="@color/pastel_green"
+            android:textSize="@dimen/tabletTextSize" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Max Temperature"
+            android:textColor="@color/pastel_green"
+            android:textSize="@dimen/tabletTextSize"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/temp_up" />
+        <TextView
+            android:id="@+id/tv_max_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:text=" — "
+            android:textColor="@color/pastel_green"
+            android:textSize="@dimen/tabletTextSize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="3">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/sunrise"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunrise"
+                android:textSize="@dimen/tabletTextSize"
+                android:textColor="@color/pastel_green"/>
+            <TextView
+                android:id="@+id/tv_sunrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" — "
+                android:gravity="center"
+                android:textColor="@color/pastel_green"
+                android:textSize="25sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/sunset"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunset"
+                android:textSize="@dimen/tabletTextSize"
+                android:textColor="@color/pastel_green"/>
+            <TextView
+                android:id="@+id/tv_sunset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" — "
+                android:gravity="center"
+                android:textColor="@color/pastel_green"
+                android:textSize="25sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

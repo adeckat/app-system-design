@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pearl"
+    tools:context=".fragment.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/pastel_green"
+            android:textSize="@dimen/tabletTextSize"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            tools:text="this is the username" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_label_name"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize"
+                tools:text="this is the name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_label_dob"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Birthday"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize" />
+
+            <TextView
+                android:id="@+id/tv_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize"
+                tools:text="this is the dob" />
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="16dp"
+                tools:text="age"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_label_gender"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize"
+                tools:text="this is the gender" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_label_height"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize" />
+
+            <TextView
+                android:id="@+id/tv_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize"
+                tools:text="this is the height" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_label_weight"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize" />
+
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize"
+                tools:text="this is the weight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_label_location"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/tabletTextSize"
+                tools:text="this is the location" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearlayout_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:gravity="center"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                app:backgroundTint="@color/coral"
+                android:textColor="@color/pastel_blue"
+                android:textSize="@dimen/tabletTextSize"/>
+
+            <Button
+                android:id="@+id/btn_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                app:backgroundTint="@color/coral"
+                android:textColor="@color/pastel_blue"
+                android:textSize="@dimen/tabletTextSize"
+                android:layout_marginLeft="50dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--<androidx.cardview.widget.CardView-->
+<!--android:id="@+id/cv_profile_pic"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_centerInParent="true"-->
+<!--android:layout_marginTop="60dp"-->
+<!--android:innerRadius="0dp"-->
+<!--android:shape="ring"-->
+<!--android:thicknessRatio="1.9"-->
+<!--app:cardCornerRadius="150dp"-->
+<!--app:layout_constraintLeft_toLeftOf="parent"-->
+<!--app:layout_constraintRight_toRightOf="parent"-->
+<!--app:layout_constraintTop_toTopOf="parent">-->
+
+<!--<ImageView-->
+<!--    android:id="@+id/img_profile_pic"-->
+<!--    android:layout_width="120dp"-->
+<!--    android:layout_height="150dp"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:scaleType="fitCenter"-->
+<!--    android:src="@drawable/plane">-->
+<!--</ImageView>-->
+<!--</androidx.cardview.widget.CardView>-->
+
+<!--<ImageButton-->
+<!--android:id="@+id/btn_update_pic"-->
+<!--android:layout_width="30dp"-->
+<!--android:layout_height="30dp"-->
+<!--android:layout_marginTop="10dp"-->
+<!--android:scaleType="fitCenter"-->
+<!--android:src="@drawable/camera"-->
+<!--app:backgroundTint="@color/coral"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintStart_toStartOf="parent"-->
+<!--app:layout_constraintTop_toBottomOf="@id/cv_profile_pic" />-->

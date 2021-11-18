@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>August</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="sex">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_your_city_name">Enter Your City Name</string>
+    <string name="google_maps_api_key">AIzaSyCPOwSQAXxoLIVHIncT8P6irez0L44gjlA</string>
+</resources>

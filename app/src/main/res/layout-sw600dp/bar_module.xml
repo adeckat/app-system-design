@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:background="@color/coral">
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:background="@color/coral"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back"/>
+    <TextView
+        android:id="@+id/tv_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="My Module Name"
+        android:textColor="@color/pastel_blue"
+        android:textSize="@dimen/tabletTextSize"/>
+    <ImageButton
+        android:id="@+id/btn_profile_pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/pic_button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/phone_account"/>
+
+</RelativeLayout>
